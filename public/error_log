@@ -1,0 +1,32 @@
+[19-Sep-2020 14:11:15 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('view')
+#1 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('view')
+#2 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('view', Array)
+#5 /home3/invid9fi/ in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[19-Sep-2020 14:11:15 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('view')
+#1 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('view')
+#2 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('view', Array)
+#5 /home3/invid9fi/ in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[19-Sep-2020 14:11:31 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('view')
+#1 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('view')
+#2 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('view', Array)
+#5 /home3/invid9fi/ in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[19-Sep-2020 14:11:31 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('view')
+#1 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('view')
+#2 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('view', Array)
+#5 /home3/invid9fi/ in /home3/invid9fi/public_html/cargotrends/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811

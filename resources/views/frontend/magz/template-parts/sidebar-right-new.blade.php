@@ -1,0 +1,12 @@
+<div class="sidebar-title for-tablet">{{ __('Sidebar') }}</div>
+@include('frontend.magz.inc._sponsored-top') 
+@include('frontend.magz.inc._popular-sidebar') 
+@include('frontend.magz.inc._sponsored-video')
+@include('frontend.magz.inc._sponsored-pre-second-top')
+@include('frontend.magz.inc._sponsored-second-top')
+@include('frontend.magz.inc._sponsored-post-second-top')
+@include('frontend.magz.inc._sponsored-middle')
+@include('frontend.magz.inc._sponsored-bottom')
+@include('frontend.magz.inc._recomended')
+@include('frontend.magz.inc._sponsored-second-middle')
+@include('frontend.magz.inc._sponsored-second-bottom')

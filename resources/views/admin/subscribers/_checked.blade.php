@@ -1,0 +1,1 @@
+<input data-id="{{$id}}" class="toggle-class" name="unsubscribe" type="checkbox" {{ $checked }} data-toggle="toggle" data-size="sm" data-on="On" data-off="Off">

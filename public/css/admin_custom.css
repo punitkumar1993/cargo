@@ -1,0 +1,32 @@
+.link-info-box {
+    color: #000;
+}
+
+.ql-fullscreen:after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f065";
+}
+
+.note-editable {
+    font-weight: normal;
+}
+
+.card {
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.msg-error-file.invalid-feedback {
+    display:block;
+}
+
+.mt--04 {
+    margin-top: -.4rem!important;
+}
+
