@@ -69,7 +69,7 @@ class TagController extends Controller
         $check_tag = Term::whereHas('taxonomy', function($query){
             $query->where('taxonomy','tag');
         })->where('name', $request->name)->exists();
-
+               
         if($check_tag) {
             return response()->json(['error_exists' => "The name has already been taken."]);
         }

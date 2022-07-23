@@ -100,6 +100,12 @@ class MagazineController extends Controller
             'name' => 'required',
             'file' => 'required|mimes:pdf',
             'image' => 'required|mimes:png,jpg,jpeg',
+            'hightlight_one' => 'required|string|min:3|max:30',
+            'hightlight_two' => 'required|string|min:3|max:30',
+            'hightlight_three' => 'required|string|min:3|max:30',
+            'hightlight_four' => 'required|string|min:3|max:30',
+            'hightlight_five' => 'required|string|min:3|max:30',
+            'hightlight_six' => 'required|string|min:3|max:30'
         ])->validate();
 
         if (!File::exists($this->path)) {
@@ -115,6 +121,13 @@ class MagazineController extends Controller
             $magazine->image = Magazine::uploadPdfFile($request, 'image');
         }
         $magazine->name = $request->name;
+        //$magazine->description = $request->description;
+        $magazine->hightlight_one = $request->hightlight_one;
+        $magazine->hightlight_two = $request->hightlight_two;
+        $magazine->hightlight_three = $request->hightlight_three;
+        $magazine->hightlight_four = $request->hightlight_four;
+        $magazine->hightlight_five = $request->hightlight_five;
+        $magazine->hightlight_six = $request->hightlight_six;
         $magazine->save();
 
         //$result = Post::sendMagazineLetter($request->name,$magazine->image);
@@ -184,6 +197,12 @@ class MagazineController extends Controller
         //$this->authorize('add-magazines');
         $validator = Validator::make($request->all(), [
             'name' => 'required',
+            'hightlight_one' => 'required|string|min:3|max:30',
+            'hightlight_two' => 'required|string|min:3|max:30',
+            'hightlight_three' => 'required|string|min:3|max:30',
+            'hightlight_four' => 'required|string|min:3|max:30',
+            'hightlight_five' => 'required|string|min:3|max:30',
+            'hightlight_six' => 'required|string|min:3|max:30'
         ])->validate();
 
         if (!File::exists($this->path)) {
@@ -202,6 +221,13 @@ class MagazineController extends Controller
         }
         
         $magazine->name = $request->name;
+        //$magazine->description = $request->description;
+        $magazine->hightlight_one = $request->hightlight_one;
+        $magazine->hightlight_two = $request->hightlight_two;
+        $magazine->hightlight_three = $request->hightlight_three;
+        $magazine->hightlight_four = $request->hightlight_four;
+        $magazine->hightlight_five = $request->hightlight_five;
+        $magazine->hightlight_six = $request->hightlight_six;
         $magazine->save();
 
         //$result = Post::sendMagazineLetter($request->name,$magazine->image);

@@ -113,7 +113,7 @@ class ContactController extends Controller
             'name'         => 'required',
             'email'        => 'required|email|unique:users,email',
             'organization' => 'required',
-           // 'g-recaptcha-response' => 'required|captcha'
+            'g-recaptcha-response' => 'required|captcha'
         ];
         $validator = Validator::make($request->all(), $rules);
 

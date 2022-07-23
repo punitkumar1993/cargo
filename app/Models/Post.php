@@ -94,17 +94,47 @@ class Post extends Model
 
     public static function getNewsLetterData()
     {
-        $postData = DB::table('posts')->where('post_status', 'publish')->limit(4)->offset(0)->orderBy('id', 'DESC')->get();
+        $postData = DB::table('posts')->where('post_status', 'publish')->limit(1)->offset(0)->orderBy('id', 'DESC')->get();
         $postData2 = DB::table('posts')->where('post_status', 'publish')
             ->whereNotIn('id', $postData->pluck('id')->toArray())
-            ->limit(4)->offset(0)->orderBy('id', 'DESC')->get();
+            ->limit(3)->offset(0)->orderBy('id', 'DESC')->get();
+
+        $postData3 = DB::table('posts')->where('post_status', 'publish')
+            ->whereNotIn('id', $postData2->pluck('id')->toArray())
+            ->limit(3)->offset(0)->orderBy('id', 'DESC')->get();
+        
+        $postData4 = DB::table('posts')->where('post_status', 'publish')
+            ->whereNotIn('id', $postData3->pluck('id')->toArray())
+            ->limit(1)->offset(0)->orderBy('id', 'DESC')->get();
+        
+        $postData5 = DB::table('posts')->where('post_status', 'publish')
+            ->whereNotIn('id', $postData4->pluck('id')->toArray())
+            ->limit(2)->offset(0)->orderBy('id', 'DESC')->get();
+            
+        $postData6 = DB::table('posts')->where('post_status', 'publish')
+            ->whereNotIn('id', $postData5->pluck('id')->toArray())
+            ->limit(2)->offset(0)->orderBy('id', 'DESC')->get();   
+            
+        $postData7 = DB::table('posts')->where('post_status', 'publish')
+            ->whereNotIn('id', $postData6->pluck('id')->toArray())
+            ->limit(7)->offset(0)->orderBy('id', 'DESC')->get();    
 
         $postData = json_decode(json_encode($postData), true);
         $postData2 = json_decode(json_encode($postData2), true);
+        $postData3 = json_decode(json_encode($postData3), true);
+        $postData4 = json_decode(json_encode($postData4), true);
+        $postData5 = json_decode(json_encode($postData5), true);
+        $postData6 = json_decode(json_encode($postData6), true);
+        $postData7 = json_decode(json_encode($postData7), true);
 
         return [
             'postData'  => $postData,
             'postData2' => $postData2,
+            'postData3' => $postData3,
+            'postData4' => $postData4,
+            'postData5' => $postData5,
+            'postData6' => $postData6,
+            'postData7' => $postData7,
         ];
     }
 

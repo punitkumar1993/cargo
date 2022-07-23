@@ -20,7 +20,14 @@ class Magazine extends Model
         'name',
         'file',
         'image',
-    ];
+        'description',
+        'hightlight_one',
+        'hightlight_two',
+        'hightlight_three',
+        'hightlight_four',
+        'hightlight_five',
+        'hightlight_six',
+     ];
 
 
     /**

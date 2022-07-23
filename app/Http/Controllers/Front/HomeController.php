@@ -90,8 +90,13 @@ class HomeController extends Controller
 
         $posts1 = $data['postData'];
         $posts2 = $data['postData2'];
+        $posts3 = $data['postData3'];
+        $posts4 = $data['postData4'];
+        $posts5 = $data['postData5'];
+        $posts6 = $data['postData6'];
+        $posts7 = $data['postData7'];
         $emailId = 'test@example.com';
-        echo view('frontend.magz.emails.news_subscribe_email', compact('posts1', 'posts2', 'emailId'))->render();
+        echo view('frontend.magz.emails.news_subscribe_email', compact('posts1', 'posts2','posts3','posts4','posts5','posts6','posts7','emailId'))->render();
         exit();
     }
     
@@ -104,9 +109,8 @@ class HomeController extends Controller
     public function viewMagazine($magazinId)
     {
         $magazinData = Magazine::find($magazinId);
-        $magazineName = $magazinData->name;
-        $magazineImage = $magazinData->image;
-        echo view('frontend.magz.emails.magazine_subscribe_email', compact('magazineName','magazineImage'))->render();
+       
+        echo view('frontend.magz.emails.magazine_subscribe_email', compact('magazinData'))->render();
         exit();
     }
     
