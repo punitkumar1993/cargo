@@ -70,6 +70,6 @@ class Term extends Model
     public static function getCategoried(){
         return self::whereHas("taxonomy", function($query){
             $query->where("taxonomy", "category");
-        })->with("taxonomy")->where('name', '!=', 'News')->where('name', '!=', 'Events')->latest()->get();
+        })->with("taxonomy")->where('name', '!=', 'News')->where('name', '!=', 'Events')->orderBy('name')->latest()->get();
     }
 }
