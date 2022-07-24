@@ -164,7 +164,13 @@
                                              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                    <td align="center" style="padding:0;Margin:0;font-size:0px">
-                                                      <img class="adapt-img" src="https://jpbxdb.stripocdn.email/content/guids/CABINET_94294d19763d7a9cc1acb753dc574e8f/images/untitled2_YQW.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                      @if ( Ads::checkActive('newsletter-top') == 'y' )
+                                                          @if ( Ads::checkAdImage('newsletter-top') != 'noimage.png' )
+                                                            <img class="adapt-img" src="{{ Ads::adImage('home-horizontal') }}" alt="{{ Ads::AdLabel('home-horizontal') }}" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                            @else
+                                                            <img class="adapt-img" src="https://1.bp.blogspot.com/-QdJyXgC2pls/WP0LCv_IlYI/AAAAAAAAEHk/NpuyIFZOYzgG1_H90fWEuIZpOWG7KGxKACLcB/s1600/header-ad.jpg" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                            @endif
+                                                       @endif    
                                                    </td>
                                                 </tr>
                                              </table>
@@ -286,7 +292,13 @@
                                              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                    <td align="center" style="padding:0;Margin:0;font-size:0px">
-                                                      <img class="adapt-img" src="https://jpbxdb.stripocdn.email/content/guids/CABINET_94294d19763d7a9cc1acb753dc574e8f/images/untitled2_YQW.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                      @if ( Ads::checkActive('newsletter-middle') == 'y' )
+                                                          @if ( Ads::checkAdImage('newsletter-middle') != 'noimage.png' )
+                                                           <img class="adapt-img" class="addBanner" src="{{ Ads::adImage('newsletter-middle') }}" alt="{{ Ads::AdLabel('newsletter-middle') }}" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                           @else
+                                                           <img class="adapt-img"  src="https://1.bp.blogspot.com/-QdJyXgC2pls/WP0LCv_IlYI/AAAAAAAAEHk/NpuyIFZOYzgG1_H90fWEuIZpOWG7KGxKACLcB/s1600/header-ad.jpg" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                           @endif
+                                                      @endif
                                                 </td>
                                                 </tr>
                                              </table>
@@ -629,7 +641,13 @@
                                              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                 <tr>
                                                    <td align="center" style="padding:0;Margin:0;font-size:0px">
-                                                      <img class="adapt-img" src="https://jpbxdb.stripocdn.email/content/guids/CABINET_94294d19763d7a9cc1acb753dc574e8f/images/untitled2_YQW.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                      @if ( Ads::checkActive('newsletter-bottom') == 'y' )
+                                                        @if ( Ads::checkAdImage('newsletter-bottom') != 'noimage.png' )
+                                                           <img class="adapt-img"  class="addBanner" src="{{ Ads::adImage('newsletter-bottom') }}" alt="{{ Ads::AdLabel('newsletter-bottom') }}" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                           @else
+                                                           <img class="adapt-img" src="https://1.bp.blogspot.com/-QdJyXgC2pls/WP0LCv_IlYI/AAAAAAAAEHk/NpuyIFZOYzgG1_H90fWEuIZpOWG7KGxKACLcB/s1600/header-ad.jpg"  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="610">
+                                                           @endif
+                                                         @endif
                                                      </td>
                                                 </tr>
                                              </table>
